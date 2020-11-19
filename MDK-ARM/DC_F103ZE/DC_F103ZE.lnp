@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"dc_f103ze\startup_stm32f103xe.o"
+"dc_f103ze\main.o"
+"dc_f103ze\gpio.o"
+"dc_f103ze\stm32f1xx_it.o"
+"dc_f103ze\stm32f1xx_hal_msp.o"
+"dc_f103ze\stm32f1xx_hal_gpio_ex.o"
+"dc_f103ze\stm32f1xx_hal_tim.o"
+"dc_f103ze\stm32f1xx_hal_tim_ex.o"
+"dc_f103ze\stm32f1xx_hal.o"
+"dc_f103ze\stm32f1xx_hal_rcc.o"
+"dc_f103ze\stm32f1xx_hal_rcc_ex.o"
+"dc_f103ze\stm32f1xx_hal_gpio.o"
+"dc_f103ze\stm32f1xx_hal_dma.o"
+"dc_f103ze\stm32f1xx_hal_cortex.o"
+"dc_f103ze\stm32f1xx_hal_pwr.o"
+"dc_f103ze\stm32f1xx_hal_flash.o"
+"dc_f103ze\stm32f1xx_hal_flash_ex.o"
+"dc_f103ze\stm32f1xx_hal_exti.o"
+"dc_f103ze\system_stm32f1xx.o"
+"dc_f103ze\myiic.o"
+"dc_f103ze\mpu6050.o"
+"dc_f103ze\inv_mpu.o"
+"dc_f103ze\inv_mpu_dmp_motion_driver.o"
+--library_type=microlib --strict --scatter "DC_F103ZE\DC_F103ZE.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DC_F103ZE.map" -o DC_F103ZE\DC_F103ZE.axf
